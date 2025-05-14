@@ -748,100 +748,56 @@ img {
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
-.portfolio__container {
-  overflow: initial;
+/*==================== PROJECTS ====================*/
+.projects__container {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__content {
-  padding: 0 1.5rem;
-  display: grid;
-  gap: 1.5rem;
-  background-color: var(--container-color);
-  border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+.projects__content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
-.portfolio__content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+.projects__content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.25rem);
 }
 
-.portfolio__img {
-  width: 100%;
-  border-radius: 1rem;
-  margin-bottom: var(--mb-0-75);
-  transition: 0.3s;
+.projects__img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: var(--mb-1);
 }
 
-.portfolio__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+.projects__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+    color: var(--title-color);
 }
 
-.portfolio__description {
-  margin-bottom: var(--mb-0-75);
-  color: var(--text-color);
+.projects__description {
+    margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--first-color);
-  color: #fff;
-  font-weight: var(--font-medium);
-  transition: 0.3s;
+.projects__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-.portfolio__button:hover {
-  background-color: var(--first-color-alt);
+.button--small {
+    padding: 0.75rem 1rem;
 }
 
-.portfolio__button-icon {
-  font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
-  transition: 0.3s;
-}
-
-.portfolio__button:hover .portfolio__button-icon {
-  transform: translateX(0.25rem);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-}
-
-.swiper-portfolio-icon {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.swiper-button-prev {
-  left: -.5rem;
-}
-
-.swiper-button-next {
-  right: -.5rem;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets {
-  bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
-  outline: none;
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /*==================== PROJECT IN MIND ====================*/
